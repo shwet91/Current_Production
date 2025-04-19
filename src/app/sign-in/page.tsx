@@ -23,7 +23,7 @@ function page() {
 
    const routeHandler = () => {
     console.log("change route clicked")
-        router.replace('/verify/dashboard');
+        router.push('/verify/dashboard');
    }
     
   return (
