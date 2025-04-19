@@ -15,7 +15,7 @@ async function dbConnect(): Promise<void> {
     try {
         console.log("DB function starts")
         const db = await mongoose.connect(`${process.env.MONGODB_URI}/Doughnut` || " " , {})
-        console.log("This is db :" , db.connections)
+        // console.log("This is db :" , db.connections)
         connection.isConnected = db.connections[0].readyState
        
     }catch (error) {
